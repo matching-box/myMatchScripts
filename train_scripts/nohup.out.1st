@@ -1,0 +1,163 @@
+Using TensorFlow backend.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/nn_module.py:153: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv1d instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/nn_module.py:317: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/nn_module.py:487: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/metrics.py:6: calling l2_normalize (from tensorflow.python.ops.nn_impl) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+dim is deprecated, use axis instead
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/models/match_pyramid.py:92: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv2d instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/models/match_pyramid.py:100: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.max_pooling2d instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/models/esim.py:37: calling softmax (from tensorflow.python.ops.nn_ops) with dim is deprecated and will be removed in a future version.
+Instructions for updating:
+dim is deprecated, use axis instead
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/models/bcnn.py:109: average_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.average_pooling2d instead.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/ops/math_grad.py:102: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-10-15 12:01:52.297303: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-10-15 12:01:52.522471: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2019-10-15 12:01:52.571421: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5587eb0d5100 executing computations on platform Host. Devices:
+2019-10-15 12:01:52.571556: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-15 12:01:53.020860: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-15 12:01:53.021172: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:01:00.0
+totalMemory: 5.94GiB freeMemory: 5.87GiB
+2019-10-15 12:01:53.021213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-15 12:01:53.034986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-15 12:01:53.035001: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-15 12:01:53.035008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-15 12:01:53.035086: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5706 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-10-15 12:01:53.036782: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5587eb7e5090 executing computations on platform CUDA. Devices:
+2019-10-15 12:01:53.036800: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): GeForce GTX 1060 6GB, Compute Capability 6.1
+2019-10-15 12:02:10.623306: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+2019-10-15 12:02:26.231147: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.22GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:26.260160: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:26.577358: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.30GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:26.690569: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.30GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:27.768304: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.66GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:28.632537: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.66GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:30.006848: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.66GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:31.369825: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.66GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:32.738027: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.66GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-15 12:02:33.597840: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.66GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-16 11:31:00.968430: W tensorflow/core/framework/op_kernel.cc:1401] OP_REQUIRES failed at save_restore_v2_ops.cc:109 : Not found: ./weights/semantic_matching; No such file or directory
+read embedding from: ../dataset_generate/lcqmc_dataset/word_embed.txt 
+read embedding from: ../dataset_generate/lcqmc_dataset/char_embed.txt 
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+training model...
+ready to save model....
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.NotFoundError: ./weights/semantic_matching; No such file or directory
+	 [[{{node save/SaveV2}}]]
+	 [[{{node save/SaveV2}}]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 1171, in save
+    {self.saver_def.filename_tensor_name: checkpoint_file})
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.NotFoundError: ./weights/semantic_matching; No such file or directory
+	 [[node save/SaveV2 (defined at /home/xujm/match-haha/train_scripts/models/base_model.py:322) ]]
+	 [[node save/SaveV2 (defined at /home/xujm/match-haha/train_scripts/models/base_model.py:322) ]]
+
+Caused by op 'save/SaveV2', defined at:
+  File "./main.py", line 276, in <module>
+    main(options)
+  File "./main.py", line 227, in main
+    model = get_model(options.model)(params, logger, init_embedding_matrix=init_embedding_matrix)
+  File "/home/xujm/match-haha/train_scripts/models/dsmm.py", line 16, in __init__
+    super(DSMM, self).__init__(p, logger, init_embedding_matrix)
+  File "/home/xujm/match-haha/train_scripts/models/match_pyramid.py", line 11, in __init__
+    super(MatchPyramidBaseModel, self).__init__(params, logger, init_embedding_matrix)
+  File "/home/xujm/match-haha/train_scripts/models/esim.py", line 28, in __init__
+    super(ESIMDecAttBaseModel, self).__init__(params, logger, init_embedding_matrix)
+  File "/home/xujm/match-haha/train_scripts/models/bcnn.py", line 296, in __init__
+    super(BCNN, self).__init__(p, logger, init_embedding_matrix)
+  File "/home/xujm/match-haha/train_scripts/models/bcnn.py", line 13, in __init__
+    super(BCNNBaseModel, self).__init__(params, logger, init_embedding_matrix)
+  File "/home/xujm/match-haha/train_scripts/models/base_model.py", line 36, in __init__
+    self.sess, self.saver = self._init_session()
+  File "/home/xujm/match-haha/train_scripts/models/base_model.py", line 322, in _init_session
+    saver = tf.train.Saver(max_to_keep=None)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 832, in __init__
+    self.build()
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 844, in build
+    self._build(self._filename, build_save=True, build_restore=True)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 881, in _build
+    build_save=build_save, build_restore=build_restore)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 510, in _build_internal
+    save_tensor = self._AddSaveOps(filename_tensor, saveables)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 210, in _AddSaveOps
+    save = self.save_op(filename_tensor, saveables)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 124, in save_op
+    tensors)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/ops/gen_io_ops.py", line 1807, in save_v2
+    name=name)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 788, in _apply_op_helper
+    op_def=op_def)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 3300, in create_op
+    op_def=op_def)
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1801, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+NotFoundError (see above for traceback): ./weights/semantic_matching; No such file or directory
+	 [[node save/SaveV2 (defined at /home/xujm/match-haha/train_scripts/models/base_model.py:322) ]]
+	 [[node save/SaveV2 (defined at /home/xujm/match-haha/train_scripts/models/base_model.py:322) ]]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./main.py", line 276, in <module>
+    main(options)
+  File "./main.py", line 235, in main
+    model.save_session()
+  File "/home/xujm/match-haha/train_scripts/models/base_model.py", line 327, in save_session
+    self.saver.save(self.sess, self.params["offline_model_dir"] + "/model.checkpoint")
+  File "/root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py", line 1188, in save
+    raise exc
+ValueError: Parent directory of ./weights/semantic_matching/model.checkpoint doesn't exist, can't save.

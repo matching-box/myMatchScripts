@@ -1,0 +1,70 @@
+Traceback (most recent call last):
+  File "./main.py", line 12, in <module>
+    from inputs.data import load_question, load_train, load_test
+  File "/home/xujm/match-haha/train_scripts/inputs/data.py", line 6, in <module>
+    from keras.preprocessing.sequence import pad_sequences
+ModuleNotFoundError: No module named 'keras'
+Using TensorFlow backend.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/keras/layers/core.py:143: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/nn_module.py:153: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv1d instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/nn_module.py:317: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/tf_common/nn_module.py:487: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/models/match_pyramid.py:92: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.conv2d instead.
+WARNING:tensorflow:From /home/xujm/match-haha/train_scripts/models/match_pyramid.py:100: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.max_pooling2d instead.
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/ops/array_grad.py:425: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-10-17 09:19:46.824786: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-10-17 09:19:46.829168: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2019-10-17 09:19:46.829607: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55e31a5058b0 executing computations on platform Host. Devices:
+2019-10-17 09:19:46.829642: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-17 09:19:47.099587: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:998] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-10-17 09:19:47.099903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7335
+pciBusID: 0000:01:00.0
+totalMemory: 5.94GiB freeMemory: 5.87GiB
+2019-10-17 09:19:47.099922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-17 09:19:47.100453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-17 09:19:47.100466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-17 09:19:47.100473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-17 09:19:47.100551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 5706 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
+2019-10-17 09:19:47.101754: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55e31ac155a0 executing computations on platform CUDA. Devices:
+2019-10-17 09:19:47.101782: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): GeForce GTX 1060 6GB, Compute Capability 6.1
+WARNING:tensorflow:From /root/anaconda3/envs/xujm/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from ../weights/semantic_matching/model.checkpoint
+2019-10-17 09:19:51.073107: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+2019-10-17 09:25:24.394897: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.04GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-17 09:25:24.599972: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.04GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-17 09:25:24.736497: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.54GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
+INFO:tensorflow:../weights/semantic_matching/model.checkpoint is not in all_model_checkpoint_paths. Manually adding it.
